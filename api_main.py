@@ -10,7 +10,7 @@ def minha_nome():
     my_params = request.args
     if(request.method == 'POST'):
         return ("Usuário sem permissão")
-    return jsonify({"message": "Sorria você está NÃO sendo filmado!"})
+    return jsonify({"message": "Sorria você está sendo filmado!"})
 
 @app.route('/novorecurso', methods=['GET', 'POST']) 
 def novo_recurso():
